@@ -203,13 +203,13 @@ while True:
                 print('\n')
 
             if thought == "left" and x>0:
-                pyautogui.move(-3, None)
+                pyautogui.move(-4, None)
             elif thought == "right" and x<maxX:
-                pyautogui.move(1, None)
+                pyautogui.move(4, None)
             elif thought == "lift" and y<maxY:
-                pyautogui.move(None, -1)
+                pyautogui.move(None, -4)
             elif thought == "drop" and y>0:
-                pyautogui.move(None, 1)
+                pyautogui.move(None, 4)
             elif thought == "neutral":
                 pyautogui.move(None, None)
             elif thought == "push":
