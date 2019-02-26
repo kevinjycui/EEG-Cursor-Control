@@ -193,7 +193,6 @@ while True:
         while True:
             thought = json.loads(receivedData.recv())["com"][0]
             print(thought)
-            print("Beginning...")
 
             maxX, maxY = pyautogui.size()
 
