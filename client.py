@@ -3,7 +3,6 @@ import json
 from websocket import create_connection
 import ssl
 import time
-import requests
 import pyautogui
 
 ########################
