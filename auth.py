@@ -11,8 +11,7 @@ receivedData.send(json.dumps({
     "id": 1
 }))
 
-msg = receivedData.recv()
-token = msg[43:-3]
+token = json.loads(receivedData.recv())["result"]["_auth"]
 
 print("Hello USER.")
 print("\nThe following set of letters is your session token. In order maintain security, do not share this token:\n\n"+str(token))
